@@ -1,0 +1,131 @@
+{
+ "wallets": [
+  {
+   "address": "0xf8831548531d56ad6a4331493243c447a827cd1f",
+   "name": "Inaccuratestake",
+   "pnl_30d": 3947667,
+   "vol_30d": 19153227
+  },
+  {
+   "address": "0xb91aeb5accc33a5f9a8615b8ed6b2d352e913987",
+   "name": "afghj2421",
+   "pnl_30d": 1601464,
+   "vol_30d": 7823610
+  },
+  {
+   "address": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+   "name": "Latina",
+   "pnl_30d": 1144253,
+   "vol_30d": 8269334
+  },
+  {
+   "address": "0xbee54d90051720e27921dc6874f02d646ffca636",
+   "name": "downtownfee",
+   "pnl_30d": 1074595,
+   "vol_30d": 3973706
+  },
+  {
+   "address": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
+   "name": "ferrariChampions2026",
+   "pnl_30d": 948036,
+   "vol_30d": 46257664
+  },
+  {
+   "address": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+   "name": "0x6db568e6",
+   "pnl_30d": 902895,
+   "vol_30d": 3976719
+  },
+  {
+   "address": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
+   "name": "HomeRunHazard",
+   "pnl_30d": 536956,
+   "vol_30d": 22130450
+  },
+  {
+   "address": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+   "name": "cigarettes",
+   "pnl_30d": 508931,
+   "vol_30d": 7785938
+  },
+  {
+   "address": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+   "name": "alwayslatetotheparty",
+   "pnl_30d": 483114,
+   "vol_30d": 91634179
+  },
+  {
+   "address": "0xe16d3f2a5807999b358affd9445c3a09e45e5e30",
+   "name": "0xE16D3F2A",
+   "pnl_30d": 479386,
+   "vol_30d": 4988225
+  },
+  {
+   "address": "0x157efb90bf2f3bae9eea4f1e9d02abf12ff3add7",
+   "name": "resadasdasd8asd8dasd4",
+   "pnl_30d": 470342,
+   "vol_30d": 1607247
+  },
+  {
+   "address": "0x52911b9d1d9da4d4783fb3280c0ccd6e73f0d4b6",
+   "name": "0x5453da42",
+   "pnl_30d": 464614,
+   "vol_30d": 2119139
+  },
+  {
+   "address": "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5",
+   "name": "0xcF609D32",
+   "pnl_30d": 423516,
+   "vol_30d": 10025924
+  },
+  {
+   "address": "0x72d815133f9f8b6529e911cf3be492846ce05213",
+   "name": "Vatrer",
+   "pnl_30d": 419445,
+   "vol_30d": 2325694
+  },
+  {
+   "address": "0xcc5bd3dd093f5f73730501e369f8928371b91edc",
+   "name": "TJRTrades",
+   "pnl_30d": 410820,
+   "vol_30d": 1024194
+  },
+  {
+   "address": "0x3d6ac5150675a83e2090234414222e968888c2b5",
+   "name": "brightshieldd",
+   "pnl_30d": 398415,
+   "vol_30d": 5853453
+  },
+  {
+   "address": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+   "name": "RN1",
+   "pnl_30d": 372625,
+   "vol_30d": 27033520
+  },
+  {
+   "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+   "name": "Soarin22",
+   "pnl_30d": 367061,
+   "vol_30d": 992282
+  },
+  {
+   "address": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+   "name": "donthackme",
+   "pnl_30d": 323937,
+   "vol_30d": 7011225
+  },
+  {
+   "address": "0xdc71bed951076a6dfd27f6a341c441b8543ed033",
+   "name": "0xDc71bED9",
+   "pnl_30d": 315130,
+   "vol_30d": 927626
+  }
+ ],
+ "virtual_bankroll": 1000,
+ "stake_per_trade": 10,
+ "min_their_trade_usd": 100,
+ "max_copy_age_seconds": 600,
+ "max_open_per_wallet": 40,
+ "publish": true,
+ "push_interval_seconds": 900
+}

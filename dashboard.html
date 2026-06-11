@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="120">
+<title>Polymarket Shadow Tracker</title>
+<style>
+ body{background:#0f1115;color:#e7e7ea;font-family:-apple-system,Segoe UI,sans-serif;
+      margin:0;padding:24px;max-width:1000px;margin:auto}
+ h1{font-size:22px;margin:0 0 4px} h2{font-size:15px;color:#d4af37;margin:28px 0 10px;
+      text-transform:uppercase;letter-spacing:.08em}
+ .muted{color:#8a8f98;font-size:13px}
+ .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:10px;margin:18px 0}
+ .card{background:#1a1d24;border-radius:10px;padding:14px}
+ .card .k{font-size:11px;color:#8a8f98;text-transform:uppercase;letter-spacing:.06em}
+ .card .v{font-size:20px;font-weight:600;margin-top:4px}
+ .pos{color:#4ade80} .neg{color:#f87171}
+ .verdict{border-radius:10px;padding:14px 16px;font-weight:600;margin:14px 0;
+      background:#33141a;
+      border:1px solid #f87171}
+ .check{display:flex;gap:10px;align-items:center;background:#1a1d24;
+      border-radius:8px;padding:9px 12px;margin:5px 0;font-size:14px}
+ .check .mark{width:18px} .check.ok .mark{color:#4ade80} .check.no .mark{color:#f87171}
+ .check .val{margin-left:auto;color:#8a8f98}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th{text-align:left;color:#8a8f98;font-weight:500;padding:6px 8px;
+      border-bottom:1px solid #2a2e37}
+ td{padding:6px 8px;border-bottom:1px solid #1e222a}
+</style></head><body>
+<h1>Polymarket Shadow Tracker <span class="muted">paper trading — no real money</span></h1>
+<p class="muted">Last updated Jun 11, 2026 16:54:18 ·
+ day 0.2 · auto-refreshes every 2 min · missed (too slow to copy): 0</p>
+
+<div class="cards">
+ <div class="card"><div class="k">Virtual equity</div><div class="v">$981.07</div></div>
+ <div class="card"><div class="k">Realized PnL</div>
+   <div class="v pos">$+0.00</div></div>
+ <div class="card"><div class="k">Unrealized PnL</div>
+   <div class="v neg">$-18.93</div></div>
+ <div class="card"><div class="k">Closed trades</div><div class="v">0</div></div>
+ <div class="card"><div class="k">Win rate</div><div class="v">0%</div></div>
+ <div class="card"><div class="k">Avg slippage</div><div class="v">+1.4&cent;</div></div>
+</div>
+
+<h2>Real-money readiness</h2>
+<div class="verdict">NOT READY — keep paper trading. Do not deposit real money yet.</div>
+<div class='check no'><span class='mark'>&#10008;</span><span>Tracked for at least 21 days</span><span class='val'>0.2 days</span></div><div class='check no'><span class='mark'>&#10008;</span><span>At least 100 closed trades</span><span class='val'>0 trades</span></div><div class='check no'><span class='mark'>&#10008;</span><span>Net PnL positive after slippage</span><span class='val'>$+0.00</span></div><div class='check no'><span class='mark'>&#10008;</span><span>Still positive without best single trade</span><span class='val'>$+0.00</span></div><div class='check ok'><span class='mark'>&#10004;</span><span>Max drawdown under 25% of bankroll</span><span class='val'>1.9%</span></div><div class='check no'><span class='mark'>&#10008;</span><span>At least half of wallets profitable to copy</span><span class='val'>0/20</span></div>
+
+<h2>Equity curve</h2>
+<svg viewBox="0 0 920 220" style="width:100%;height:auto">
+<line x1="10" y1="28.4" x2="910" y2="28.4"
+      stroke="#555" stroke-dasharray="5,5"/>
+<text x="910" y="22.4" fill="#888" font-size="11"
+      text-anchor="end">start $1000</text>
+<polyline points="10.0,28.4 35.3,28.4 111.3,28.4 151.3,28.4 865.7,29.9 887.7,116.2 910.0,186.6" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="910" y="18" fill="#f87171" font-size="14" font-weight="bold"
+      text-anchor="end">$981.07</text>
+</svg>
+
+<h2>Per-wallet results</h2>
+<table><tr><th>Wallet</th><th>Closed trades</th><th>PnL</th></tr><tr><td>HomeRunHazard</td><td>0</td><td class='pos'>$+0.00</td></tr><tr><td>RN1</td><td>0</td><td class='pos'>$+0.00</td></tr></table>
+
+<h2>Open positions (18)</h2>
+<table><tr><th>Wallet</th><th>Market</th><th>Outcome</th><th>Their&nbsp;entry</th>
+<th>Our&nbsp;entry</th><th>Now</th><th>PnL</th><th>Opened</th></tr><tr><td>HomeRunHazard</td><td>Spread: Atlanta Braves (-3.5)</td><td>Chicago White Sox</td><td>0.780</td><td>0.800</td><td>0.780</td><td class='neg'>$-0.25</td><td>Jun 11 16:53</td></tr><tr><td>HomeRunHazard</td><td>Spread: Seattle Mariners (-3.5)</td><td>Baltimore Orioles</td><td>0.770</td><td>0.790</td><td>0.770</td><td class='neg'>$-0.25</td><td>Jun 11 16:53</td></tr><tr><td>RN1</td><td>Tucuman: Thiago Cigarran vs Juan Estevez</td><td>Juan Estevez</td><td>0.920</td><td>0.970</td><td>0.950</td><td class='neg'>$-0.21</td><td>Jun 11 16:53</td></tr><tr><td>RN1</td><td>Modena: Lucia Bronzetti vs Julia Grabher</td><td>Julia Grabher</td><td>0.220</td><td>0.160</td><td>0.110</td><td class='neg'>$-3.12</td><td>Jun 11 16:53</td></tr><tr><td>RN1</td><td>Chicago Cubs vs. Colorado Rockies</td><td>Chicago Cubs</td><td>0.880</td><td>0.890</td><td>0.890</td><td class='pos'>$+0.00</td><td>Jun 11 16:53</td></tr><tr><td>HomeRunHazard</td><td>Modena: Lucia Bronzetti vs Julia Grabher</td><td>Lucia Bronzetti</td><td>0.740</td><td>0.690</td><td>0.840</td><td class='pos'>$+2.17</td><td>Jun 11 16:47</td></tr><tr><td>HomeRunHazard</td><td>Tucuman: Thiago Cigarran vs Juan Estevez</td><td>Juan Estevez</td><td>0.930</td><td>0.950</td><td>0.950</td><td class='pos'>$+0.00</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Mexico vs. South Africa: O/U 3.5</td><td>Over</td><td>0.110</td><td>0.100</td><td>0.080</td><td class='neg'>$-2.00</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Spread: Mexico (-1.5)</td><td>South Africa</td><td>0.050</td><td>0.050</td><td>0.010</td><td class='neg'>$-8.00</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Texas Rangers vs. Kansas City Royals</td><td>Texas Rangers</td><td>0.530</td><td>0.580</td><td>0.650</td><td class='pos'>$+1.21</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Tucuman: Federico Coria vs Andrea Collarini</td><td>Andrea Collarini</td><td>0.500</td><td>0.660</td><td>0.600</td><td class='neg'>$-0.91</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Mexico vs. South Africa: Both Teams to Score</td><td>No</td><td>0.920</td><td>0.940</td><td>0.960</td><td class='pos'>$+0.21</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Spread: Mexico (-1.5)</td><td>Mexico</td><td>0.940</td><td>0.960</td><td>0.980</td><td class='pos'>$+0.21</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Spread: Mexico (-2.5)</td><td>Mexico</td><td>0.390</td><td>0.360</td><td>0.380</td><td class='pos'>$+0.56</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Mexico vs. South Africa: O/U 2.5</td><td>Over</td><td>0.450</td><td>0.430</td><td>0.390</td><td class='neg'>$-0.93</td><td>Jun 11 16:47</td></tr><tr><td>RN1</td><td>Mexico vs. South Africa: Both Teams to Score</td><td>Yes</td><td>0.070</td><td>0.100</td><td>0.020</td><td class='neg'>$-8.00</td><td>Jun 11 16:47</td></tr><tr><td>HomeRunHazard</td><td>Chicago Cubs vs. Colorado Rockies</td><td>Chicago Cubs</td><td>0.910</td><td>0.920</td><td>0.870</td><td class='neg'>$-0.54</td><td>Jun 11 16:42</td></tr><tr><td>RN1</td><td>Mexico vs. South Africa: O/U 2.5</td><td>Under</td><td>0.530</td><td>0.540</td><td>0.590</td><td class='pos'>$+0.93</td><td>Jun 11 16:42</td></tr></table>
+
+<h2>Recent closed trades</h2>
+<table><tr><th>Wallet</th><th>Market</th><th>Outcome</th><th>Entry</th><th>Exit</th>
+<th>Reason</th><th>PnL</th><th>Closed</th></tr><tr><td colspan=8 class='muted'>None yet</td></tr></table>
+
+<p class="muted" style="margin-top:24px">Stake $10 per copied trade ·
+ copying trades over $100 ·
+ only copies trades seen within 10 min (Mac asleep = trades missed, counted above) ·
+ log: tracker.log</p>
+</body></html>
