@@ -216,8 +216,10 @@ def readiness(cfg, state):
     days = (time.time() - state["started_at"]) / 86400
     closed = state["closed"]
     realized = sum(c["pnl"] for c in closed)
-    best = max((c["pnl"] for c in closed), default=0)
-    pnl_excl_best = realized - max(0, best)
+    top5 = sorted((c["pnl"] for c in closed), reverse=True)[:5]
+    pnl_excl_top5 = realized - sum(p for p in top5 if p > 0)
+    copied = len(closed) + len(state["open"])
+    coverage = 100 * copied / (copied + state.get("missed", 0)) if copied else 0
     eq = [e[1] for e in state["equity_history"]] or [cfg["virtual_bankroll"]]
     peak, max_dd = eq[0], 0.0
     for v in eq:
@@ -235,8 +237,10 @@ def readiness(cfg, state):
         ("Tracked for at least 21 days", days >= 21, f"{days:.1f} days"),
         ("At least 100 closed trades", len(closed) >= 100, f"{len(closed)} trades"),
         ("Net PnL positive after slippage", realized > 0, f"${realized:+.2f}"),
-        ("Still positive without best single trade", pnl_excl_best > 0,
-         f"${pnl_excl_best:+.2f}"),
+        ("Still positive without top 5 trades (not luck)", pnl_excl_top5 > 0,
+         f"${pnl_excl_top5:+.2f}"),
+        ("Copied 33%+ of eligible trades (sample is valid)", coverage >= 33,
+         f"{coverage:.0f}%"),
         ("Max drawdown under 25% of bankroll", dd_pct < 25, f"{dd_pct:.1f}%"),
         (f"At least half of wallets profitable to copy",
          profitable_wallets >= (n_wallets + 1) // 2,
