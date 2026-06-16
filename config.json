@@ -119,6 +119,41 @@
    "name": "0xDc71bED9",
    "pnl_30d": 315130,
    "vol_30d": 927626
+  },
+  {
+   "address": "0x96cfcb0c30942cfcd1cdf76c7d408794d66b1acb",
+   "name": "mintblade",
+   "pnl_week": 9238345,
+   "added": "2026-06-16",
+   "cohort": "worldcup-week"
+  },
+  {
+   "address": "0xed64a7bf029040aa331abc87902434d815ef217d",
+   "name": "fishalive",
+   "pnl_week": 9063378,
+   "added": "2026-06-16",
+   "cohort": "worldcup-week"
+  },
+  {
+   "address": "0x5e4c3b5b81171e2ca4ab776ac0d6bba787f9dba2",
+   "name": "endlessFate",
+   "pnl_week": 6221434,
+   "added": "2026-06-16",
+   "cohort": "worldcup-week"
+  },
+  {
+   "address": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+   "name": "swisstony",
+   "pnl_week": 1656878,
+   "added": "2026-06-16",
+   "cohort": "worldcup-week"
+  },
+  {
+   "address": "0x4761ecf3578e388a9b16c43f874efe32ee855ae8",
+   "name": "Grenderen",
+   "pnl_week": 1097008,
+   "added": "2026-06-16",
+   "cohort": "worldcup-week"
   }
  ],
  "virtual_bankroll": 1000,
