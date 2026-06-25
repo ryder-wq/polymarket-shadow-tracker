@@ -162,5 +162,5 @@
  "max_copy_age_seconds": 600,
  "max_open_per_wallet": 40,
  "publish": true,
- "push_interval_seconds": 900
+ "push_interval_seconds": 0
 }

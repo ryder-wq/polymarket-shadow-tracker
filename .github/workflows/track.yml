@@ -1,0 +1,36 @@
+name: shadow-tracker
+
+# Runs the Polymarket shadow tracker in the cloud every 5 minutes so it keeps
+# tracking 24/7 even when the laptop is off. State persists by committing
+# state.json back to the repo each cycle (config push_interval_seconds: 0).
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 min (GitHub's minimum; best-effort timing)
+  workflow_dispatch: {}       # lets us trigger a run manually to test
+
+# Allow the run to commit updated state.json + dashboard back to the repo.
+permissions:
+  contents: write
+
+# Never run two cycles at once; let an in-progress one finish before the next.
+concurrency:
+  group: shadow-tracker
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repo (with push credentials)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set git identity for the commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run tracker cycle
+        run: python3 tracker.py
